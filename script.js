@@ -87,6 +87,53 @@ function primeTester(n){
 		}
 		
 		
-		
+function fibList(n){	
+	
+	var testing = fibLocator(n); //for testing only
+	
+	alert("working so far: " +testing);
+	//alert("working so far: ");
+	
+	
+
+
+
+}
+
+function fibLocator(n){
+	//finds the fibonacci value of the given parameter (6th value in sequence for example)
+	
+	if(n == 1){
+	
+		return 0;
+	
+	} else if(n == 2 || n == 3){
+	
+	
+		return 1;	
+	
+	} else {
+	
+		return fibLocator(n-1) + fibLocator(n-2);
+	
+	}
+	
+
+}
+
+function fibQuickAns(n){	
+	
+	
+	var testing = fibLocator(n); 
+	
+	alert("working so far: " +testing);
+	
+	//alert("working so far: ");
+	
+	
+
+
+
+}	
 		
 		

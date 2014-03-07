@@ -20,7 +20,7 @@
 				
 				<table>
 					<tr><td>test for prime: </td><td><input id="pTest" type="text" placeholder="numbers only please"></td><td><input type="button" value="check" onclick="primeResult()"></td></tr>
-					<tr><td>quantity of primes: </td><td><input id="pCount" type="text" placeholder="numbers only please"></td><td><input type="button" value="create" onclick="primeLister()"></td></tr>
+					<tr><td>find primes to: </td><td><input id="pCount" type="text" placeholder="numbers only please"></td><td><input type="button" value="create" onclick="primeLister()"></td></tr>
 					<tr><td>result</td><td id="result"></td></tr>
 				</table>		
 				
@@ -39,8 +39,8 @@
 				<legend>Fibonacci</legend>
 				
 				<table>
-					<tr><td>test for prime: </td><td><input id="fTest" type="text" placeholder="numbers only please"></td><td><input type="button" value="check" onclick=""></td></tr>
-					<tr><td>quantity of primes: </td><td><input id="fCount" type="text" placeholder="numbers only please"></td><td><input type="button" value="create" onclick=""></td></tr>
+					<tr><td>location in sequence: </td><td><input id="fTest" type="text" placeholder="DOES NOT EXIST"></td><td><input type="button" value="check" onclick="fibQuickAns(document.getElementById('fTest').value)"></td></tr>
+					<tr><td>find Fibonaccis to: </td><td><input id="fCount" type="text" placeholder="in development"></td><td><input type="button" value="create" onclick="fibList(document.getElementById('fCount').value)"></td></tr>
 					<tr><td>result</td><td id="result"></td></tr>
 				</table>		
 				
