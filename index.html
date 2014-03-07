@@ -6,51 +6,57 @@
 	
 		<title>Fun with Numbers</title>
 		<script src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	
 	</head>
 
 
 	<body>
-	
-		<form id="pForm">
-			
-			<fieldset>
-			
-				<legend>Primes</legend>
-				
-				<table>
-					<tr><td>test for prime: </td><td><input id="pTest" type="text" placeholder="numbers only please"></td><td><input type="button" value="check" onclick="primeResult()"></td></tr>
-					<tr><td>find primes to: </td><td><input id="pCount" type="text" placeholder="numbers only please"></td><td><input type="button" value="create" onclick="primeLister()"></td></tr>
-					<tr><td>result</td><td id="result"></td></tr>
-				</table>		
-				
-				<textarea id="txtArea" cols="40" rows="15"></textarea>
-				
-				
-			
-			</fieldset>
 		
-		</form id="fForm">
+		<div id="outer">
+			<form id="pForm" class="formClass">
+				
+				<fieldset>
+				
+				
+					<legend>Primes</legend>
+					
+					
+					<table>
+						<tr><td>test for prime: </td><td><input id="pTest" type="text" placeholder="numbers only please"></td><td><input type="button" value="check" onclick="primeResult()"></td></tr>
+						<tr><td>find primes to: </td><td><input id="pCount" type="text" placeholder="numbers only please"></td><td><input type="button" value="create" onclick="primeLister()"></td></tr>
+						<tr><td>result</td><td id="result"></td></tr>
+					</table>		
+					
+					<textarea id="txtArea" cols="40" rows="15"></textarea>
+					
+				
+				
+				</fieldset>
+			
+			</form id="fForm">
+			
+			<form>
+				
+				<fieldset>
+				
+					<legend>Fibonacci</legend>
+					
+					<table>
+						<tr><td>location in sequence: </td><td><input id="fTest" type="text" placeholder="in development"></td><td><input type="button" value="check" onclick="fibQuickAns(document.getElementById('fTest').value)"></td></tr>
+						<tr><td>find Fibonaccis to: </td><td><input id="fCount" type="text" placeholder="in development"></td><td><input type="button" value="create" onclick="fibList(document.getElementById('fCount').value)"></td></tr>
+						<tr><td>result</td><td id="result"></td></tr>
+					</table>		
+					
+					<textarea id="txtAreaF" cols="40" rows="15"></textarea>
+					
+					
+				
+				</fieldset>
+			
+			</form>
 		
-		<form>
-			
-			<fieldset>
-			
-				<legend>Fibonacci</legend>
-				
-				<table>
-					<tr><td>location in sequence: </td><td><input id="fTest" type="text" placeholder="in development"></td><td><input type="button" value="check" onclick="fibQuickAns(document.getElementById('fTest').value)"></td></tr>
-					<tr><td>find Fibonaccis to: </td><td><input id="fCount" type="text" placeholder="in development"></td><td><input type="button" value="create" onclick="fibList(document.getElementById('fCount').value)"></td></tr>
-					<tr><td>result</td><td id="result"></td></tr>
-				</table>		
-				
-				<textarea id="txtAreaF" cols="40" rows="15"></textarea>
-				
-				
-			
-			</fieldset>
-		
-		</form>
+		</div>
 		
 	</body>
 	

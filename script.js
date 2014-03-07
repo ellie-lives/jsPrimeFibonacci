@@ -90,17 +90,18 @@ function primeTester(n){
 function fibList(n){	
 	
 	var fibArray = new Array();
-	fibArray[0] = "this value should not be seen";
+	fibArray[0] = "This value should not be seen.";
 	
 	for(var i = 1; i <= n; i++){
 	
 		fibArray[i] = fibLocator(i);
 		
-		document.getElementById("txtAreaF").innerHTML = fibArray;
+		//document.getElementById("txtAreaF").innerHTML = fibArray;
 		
 		
 	}
 	
+	fibArray.shift();
 	document.getElementById("txtAreaF").innerHTML = fibArray;
 
 
