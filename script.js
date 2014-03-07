@@ -89,13 +89,19 @@ function primeTester(n){
 		
 function fibList(n){	
 	
-	var testing = fibLocator(n); //for testing only
+	var fibArray = new Array();
+	fibArray[0] = "this value should not be seen";
 	
-	alert("working so far: " +testing);
-	//alert("working so far: ");
+	for(var i = 1; i <= n; i++){
 	
+		fibArray[i] = fibLocator(i);
+		
+		document.getElementById("txtAreaF").innerHTML = fibArray;
+		
+		
+	}
 	
-
+	document.getElementById("txtAreaF").innerHTML = fibArray;
 
 
 }
@@ -128,11 +134,7 @@ function fibQuickAns(n){
 	
 	alert("working so far: " +testing);
 	
-	//alert("working so far: ");
 	
-	
-
-
 
 }	
 		
