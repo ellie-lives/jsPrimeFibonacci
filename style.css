@@ -1,5 +1,14 @@
 /* main style sheet */
 
+body{
+
+background-color:#000033;
+color:#eee;
+
+
+}
+
+
 #outer{
 
 width:600px;
